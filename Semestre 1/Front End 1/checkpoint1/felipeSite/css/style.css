@@ -99,9 +99,8 @@ div > ul {
 .lista-curiosidades{
     width: 60%;
     margin: 20px auto;
-    border-radius: 30px;
-    
 }
+
 .curiosidade {
     list-style-type: square;
     width: 100%;
