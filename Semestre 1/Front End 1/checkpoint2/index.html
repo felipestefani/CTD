@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Gastrô</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="#"><img class="img-logo" src="img/logo.png" alt="Logotipo do restaurante le gastrô"></a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Onde estamos</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+            <a class="telefone" href="#"><p class="telefone">(12)99999-9999</p></a>
+        </nav>
+        <h1>Le Gastrô</h1>
+        <div class="reservar-header reservar">
+            <a href="#formulario"><button class="botao-reservar botao-reservar-header" type="submit" name="reservar">Reservar</button></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="secao secao-1">
+            <div class="quadrado1"></div>
+            <img class="comida1" src="img/comida1.jpeg" alt="Um prato preto redondo com peixe frito e purê de batata">
+            <div class="esquerda">
+                <h2 class="titulo-comida">Azul marinho com purê</h2>
+                <p>Um peixe único, encontrado no sul, em águas geladas, com purê de batata. Especiarias da casa trazem todo o sabor que seu paladar nunca escontrará igual.</p>
+            </div>
+        </div>
+        <div class="secao secao-2">
+            <div class="quadrado2"></div>
+            <img src="img/comida2.jpeg" alt="" class="comida2">
+            <div class="direita">
+                <h2 class="titulo-comida">Filé de Truta a le bistrô</h2>
+                <p>A truta traz toda sua força e gosto apurado à casa. Peixe de água doce, combinado à preparação meditarrânea, é um prato exclusivo.</p>
+            </div>
+        </div>
+        <div class="secao secao-3">
+            <div class="quadrado3"></div>
+            <img src="img/sobremesa.jpeg" alt="" class="sobremesa">
+            <div class="esquerda tc3">
+                <h2 class="titulo-comida">Morango e banana com chocolate e waffle</h2>
+                <p>Experiência sem igual. Essa sobremesa que é feita com base na culinária francesa retoma características da época de Luis IV. As frutas combinadas com chocolate
+                    combinam e trazem prazer a qualquer tipo de gosto.
+                </p>
+            </div>
+        </div>
+
+        <div class="formulario" id="formulario">
+            <h2 class="form-title">Para reservar uma mesa, preencha o formulário abaixo!</h2>
+            <form class="form" action="#" method="POST">
+                <fieldset>
+                    <div class="nome form-field">
+                        <label for="nome">Nome completo:</label><br>
+                        <input class="non-radio" type="text" id="nome" name="nome" placeholder="Felipe Stefani" oninvalid="this.setCustomValidity('Você deve inserir seu nome completo')" onvalid="this.setCustomValidity('')" required>
+                    </div>
+                    <div class="email form-field">
+                        <label for="email">E-mail:</label><br>
+                        <input class="non-radio" type="email" id="email" name="email" placeholder="exemplo@gmail.com" oninvalid="this.setCustomValidity('Você deve inserir seu email')" onvalid="this.setCustomValidity('')" required>
+                    </div>
+                    <div class="tel form-field">
+                        <label for="telefone">Telefone:</label><br>
+                        <input  class="non-radio"type="text" id="telefone" name="telefone" placeholder="(12)999999999" oninvalid="this.setCustomValidity('Você deve inserir seu telefone')" onvalid="this.setCustomValidity('')" required>
+                    </div>
+                    <div class="data-nascimento form-field">
+                        <label for="data-nascimento">Data de nascimento:</label><br>
+                        <input class="non-radio" type="date" id="data-nascimento" name="data-nascimento" required>
+                    </div>
+                    <div class="selecione form-field">
+                        <label for="restaurante">Qual a localização da reserva:</label>
+                        <select name="restaurante" id="restaurante" required>
+                            <option value="#" disabled selected>Selecione um local</option>
+                            <option value="norte">Le Gastrô Norte</option>
+                            <option value="sul">Le Gastrô Sul</option>
+                            <option value="leste">Le Gastrô Leste</option>
+                            <option value="oeste">Le Gastrô Oeste</option>
+                        </select>
+                    </div>
+                    <div class="checkbox form-field">
+                        <p id="pesquisa">Se você já nos conhece, tem pratos preferidos?</p>
+                        <div class="pesquisa-preferencia">
+                            <input class="check-button" type="checkbox" id="truta" name="preferencia">
+                            <label class="check-label" for="truta">Truta</label>
+                            <input class="check-button" type="checkbox" id="marlin" name="preferencia">
+                            <label class="check-label" for="marlin">Marlin</label>
+                            <input class="check-button" type="checkbox" id="salmao" name="preferencia">
+                            <label class="check-label" for="salmao">Salmão</label>
+                            <input class="check-button" type="checkbox" id="robalo" name="preferencia">
+                            <label class="check-label" for="robalo">Robalo</label>
+                            <input class="check-button" type="checkbox" id="atum" name="preferencia">
+                            <label class="check-label" for="atum">Atum</label>
+                            <input class="check-button" type="checkbox" id="namorado" name="preferencia">
+                            <label class="check-label" for="namorado">Namorado</label>
+                        </div>
+                    </div>
+                    <div class="maioridade form-field">
+                        <p id="maior-de-idade">Você é maior de idade?</p>
+                        <div class="maioridade">
+                            <input class="radio-button" type="radio" id="maior" name="maioridade" value="y">
+                            <label class="radio-label" for="maior">Sim</label>
+                            <input class="radio-button" type="radio" id="menor" name="maioridade" value="n" checked>
+                            <label class="radio-label" for="menor">Não</label>
+                        </div>
+                    </div>
+                    <div class="botoes">
+                        <div class="reservar">
+                            <button class="botao-reservar" type="submit" name="reservar">Reservar</button>
+                        </div>
+                        <div class="resetar">
+                            <input class="botao-reset" type="reset" name="resetar" value="Limpar"></button>
+                        </div>
+                    </div>
+                    
+                </fieldset>
+                
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo-descricao">
+            <a class="logo-rodape" href="#"><img class="img-logo-rodape" src="/img/logo.png" alt="Logotipo do restaurante le gastrô"></a>
+            <p class="texto-descricao">Não fazemos comida. Criamos novas experiências.</p>
+        </div>
+        <div class="menu-rodape">
+            <h4 class="titulo-menu-rodape">Menu</h4>
+            <ul class="lista-menu-rodape lista-rodape">
+                <li class="li-rodape"><a class="item-rodape" href="#">Home</a></li>
+                <li class="li-rodape"><a class="item-rodape" href="#">Sobre Nós</a></li>
+                <li class="li-rodape"><a class="item-rodape" href="#">Onde Estamos</a></li>
+                <li class="li-rodape"><a class="item-rodape" href="#">Contatos</a></li>
+            </ul>
+        </div>
+        <div class="servicos-rodape">
+            <h4 class="titulo-servicos-rodape">Serviços</h4>
+            <ul class="lista-servicos-rodape lista-rodape">
+                <li class="li-rodape"><a class="item-rodape" href="#">Cardápio</a></li>
+                <li class="li-rodape"><a class="item-rodape" href="#">Onde Entregamos</a></li>
+                <li class="li-rodape"><a class="item-rodape" href="#">Reservas</a></li>
+                <li class="li-rodape"><a class="item-rodape" href="#">Palestras</a></li>
+            </ul>
+        </div>
+        <div class="contatos-rodape">
+            <h4 class="titulo-contato-rodape">Contatos</h4>
+            <ul class="lista-contatos-rodape lista-rodape">
+                <li class="li-rodape">legastro@legastro.com.br</li>
+                <li class="li-rodape">(12)99999-9999</li>
+            </ul>
+        </div>
+        <div class="nossas-redes-rodape">
+            <h4 class="titulo-nossas-redes-rodape">Nossas Redes</h4>
+            <ul class="lista-nossas-redes-rodape lista-rodape">
+                <li class="li-rodape logos-redes"><a class="item-rodape github" href="https://github.com/felipestefani" target="_blank"><img class="logo-rede" src="/img/github.png" alt="Logotipo do github"></a></li>        <!--div>Icons made by <a href="https://www.flaticon.com/authors/riajulislam" title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div-->
+                <li class="li-rodape logos-redes"><a class="item-rodape instagram" href="https://www.instagram.com/felipestefani/" target="_blank"><img class="logo-rede" src="/img/instagram.png" alt="Logotipo do Instagram"></a></li>     <!--div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div-->
+                <li class="li-rodape logos-redes"><a class="item-rodape linkedin" href="https://www.linkedin.com/in/felipe-stefani-a35185116/" target="_blank"><img class="logo-rede" src="/img/linkedin.png" alt="Logotipo do Linkedin"></a></li>      <!--div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div-->
+                <li class="li-rodape logos-redes"><a class="item-rodape" href="#"></a></li>
+            </ul>
+        </div>
+        <p class="direitos">© Todos os direitos reservados</p>
+    </footer>
+    
+</body>
+</html>
