@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH Flix | Coringa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body style="min-width: 320px;">
+    <header class="sticky sticky-top bg-white">
+        <div class="px-3">
+            <nav class="navbar navbar-expand-sm navbar-light bg-white" style="min-width: 250px;">
+                <a class="navbar-brand" href="../index.html"><img src="../image/logo.png" alt="Logotipo Digital House" width="120px" height="40px"></a>
+                <div class="navbar-nav ms-auto">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#itens">Itens</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="modal" href="#modalLogin">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="bg-image" style="background-image: url('../image/coringa_banner.jpeg'); height: 80vh; background-size: cover;">
+        <div class="mask pb-5" style="background-color: rgba(0, 0, 0, 0.5); height: 100%;"></div>
+    </main>
+
+    <section class="container my-4 py-4">
+        <div class="mx-5">
+            <div class="d-flex justify-content-between">
+                <div >
+                    <h1 class="fw-bold m-0">Coringa</h1>
+                    <img src="../image/estrelas.png" alt="Avaliação" style="width: 100px; height: 60px;">
+                </div>
+                <div class="container">
+                    <div class="botao d-flex justify-content-end">
+                        <a href="../index.html" class="btn btn-primary border-0 rounded-5 p-2" style="width: 25%;">Voltar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="py-4">
+                Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante.
+            </p>
+            <div class="d-flex mt-5">
+                <div class="diretor me-5 pe-5">
+                    <h4>Diretor</h4>
+                    <a href="https://en.wikipedia.org/wiki/Todd_Phillips" style="text-decoration: none;"><p>Todd Phillips</p></a>
+                </div>
+                <div class="escritores ms-5 ps-5">
+                    <h4>Escritores</h4>
+                    <p><a href="https://en.wikipedia.org/wiki/Todd_Phillips" style="text-decoration: none;">Todd Phillips</a>  - <a href="https://pt.wikipedia.org/wiki/Scott_Silver" style="text-decoration: none;">Scott Silver</a> - <a href="https://pt.wikipedia.org/wiki/Bob_Kane" style="text-decoration: none;">Bob Kane</a></p>
+                </div>
+            </div>
+            <h2 class="pt-5">Trailer</h2>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/jfVTJm9NilA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="container">
+                <div class="botao d-flex justify-content-center mt-5">
+                    <a href="../index.html" class="btn btn-primary border-0 rounded-5 p-2" style="width: 25%;">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="d-flex justify-content-center" id="footer">
+        <div class="bg-dark w-100 pt-4">
+          <div class="d-flex flex-column justify-content-center align-items-center pt-5">
+            <h4 class="text-white mb-2" style="--bs-text-opacity: 0.8;">Felipe Stefani</h4>
+            <p class="text-secondary mb-3 mt-2" style="font-size: 14px;">Responsável pelo desenvolvimento do CP3</p>
+            <div>
+              <ul class="d-flex">
+                <li class="me-4"><a href="https://www.instagram.com/felipestefani/" target="_blank"><img src="../image/instagram.png" alt="Logo instagram" style="width: 40px; height: 40px;"></a></li>
+                <li class="me-4"><a href="https://github.com/felipestefani" target="_blank"><img src="../image/github.png" alt="Logo github" style="width: 40px; height: 40px;"></a></li>
+                <li class="me-4"><a href="https://www.linkedin.com/in/felipe-stefani-a35185116/" target="_blank"><img src="../image/linkedin.png" alt="Logo linkedin" style="width: 40px; height: 40px;"></a></li>
+              </ul>
+            </div>
+            <h6 class="text-secondary mt-3 mb-5 pb-3">Checkpoint 3 desenvolvido em dezembro de 2021</h6>
+          </div>
+        </div>
+      </footer>
+
+      <div class="modal fade" id="modalLogin" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="d-flex align-items-end justify-content-end">
+            <button type="button" class="btn-close mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class=" container modal-header d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="../image/logo.png" style="width: 70%;justify-self: center;" alt="logo Digital House">
+            </div>
+            
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="senha" class="col-form-label">senha</label>
+                <input type="senha" class="form-control" id="senha">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+            <button class="btn btn-primary" data-bs-target="#confirm" data-bs-toggle="modal">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="confirm" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="d-flex align-items-end justify-content-end">
+            <button type="button" class="btn-close mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class=" container modal-header d-flex justify-content-center">
+            <div>
+              <img class="" src="../image/logo.png" alt="Logo Digiral House">
+            </div>
+          </div>
+          <div class="modal-body text-center">
+            Login realizado com sucesso (para fins didáticos)
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#modalLogin" data-bs-toggle="modal">Voltar a página anterior</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
