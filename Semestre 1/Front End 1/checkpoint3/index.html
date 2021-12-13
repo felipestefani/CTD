@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DH Flix</title>
+    <title>DH Flix | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body style="min-width: 320px;">
-    <header>
-        <div class="mx-2">
+    <header class="sticky sticky-top bg-white">
+        <div class="px-3">
           <nav class="navbar navbar-expand-sm navbar-light bg-white" style="min-width: 250px;">
             <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="Logotipo Digital House" width="120px" height="40px"></a>
             <div class="navbar-nav ms-auto">
@@ -19,16 +19,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Itens</a>
+                    <a class="nav-link" href="#itens">Itens</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Sobre nós</a>
+                    <a class="nav-link" href="#footer">Sobre nós</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Login</a>
+                    <a class="nav-link" data-bs-toggle="modal" href="#modalLogin">Login</a>
                   </li>
                 </ul>
               </div>
@@ -37,15 +37,15 @@
         </div>
     </header>
 
-    <main class="">
-      <div class="bg-image" style="background-image: url('./image/fundo.jpeg'); height: 60vh;">
+    <main class="" id="home">
+      <div class="bg-image" style="background-image: url('./image/fundo.jpeg'); height: 100vh;">
         <div class="mask pb-5" style="background-color: rgba(0, 0, 0, 0.85); height: 100%;">
           <div class="container d-flex justify-content-center align-items-center" style="height: 100%;">
             <div>
               <h1 class="text-danger" style="font-size: 50px; font-weight: 700;">DH Flix</h1>
               <p class="text-white" style="font-size: 26px;">Confira a maior coletânea de filmes que a Digital House tem a te oferecer</p>
               <div class="d-flex justify-content-center align-items-center">
-                <button type="button" class="btn btn-outline-success text-light" style="width: 230px;">Explorar</button>
+                <a href="#itens"><button type="button" class="btn btn-outline-success text-light lh-lg" style="width: 230px;">Explorar</button></a>
               </div>
             </div>
           </div>
@@ -53,107 +53,171 @@
       </div>
     </main>
 
-    <section class="my-4 mx-4">
-      <h1 class="text-center mb-4" style="font-size: 50px; font-weight: 700;">Itens</h1>
+    <section class="d-flex flex-column align-items-center m-4">
+      <h1 class="text-center mb-4" id="itens" style="font-size: 50px; font-weight: 700;">Itens</h1>
       
-      <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4 mx-md-4 mx-lg-5">
-        
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-sm-3 mx-md-4 mx-lg-5" style="max-width: 1270px;" id="coringa-info">
         <div class="col">
-          <img src="./image/coringa_card.jpeg" class="card-img-top" alt="...">
-          <div class="card bg-light shadow mb-3 rounded-top-5">
-            <div class="card-body">
-              <h3 class="card-title">Coringa</h3>
-              <p class="card-text fw-lighter">Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante.</p>
-              <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-success border-0 rounded-5" style="width: 90%;">Abrir</button>
+          <div class="card h-100 shadow mb-5">
+            <img src="./image/coringa_card.jpeg" class="card-img-top rounded-3" alt="Personagem Coringa pensativo" style="height: 180px;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-between bg-light">
+              <div class="texto">
+                <h5 class="card-title">Coringa</h5>
+                <p class="card-text">Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante Arthur Fleck inicia seu caminho como uma mente criminosa após assassinar três homens em pleno metrô. Sua ação inicia um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.</p>
+              </div>
+              <div class="botao container d-flex justify-content-center mt-5">
+                <a href="./sub/coringa.html" class="btn btn-success border-0 rounded-5 p-2 lh-lg" style="width: 90%;">Abrir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card h-100 shadow mb-5 w-100">
+            <img src="./image/alice.jpeg" class="card-img-top" alt="Personagem do filme Alice reunidos" style="height: 180px;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-between bg-light">
+              <div class="texto">
+                <h5 class="card-title">Alice</h5>
+                <p class="card-text">Ainda garotinha, Alice Kingsleigh visitou um lugar mágico pela primeira vez e não tinha mais lembranças sobre o local a não ser em seus sonhos. Em uma festa da nobreza, a jovem vê um coelho branco. Alice o segue e cai em um buraco, indo parar em um mundo estranho: o País das Maravilhas. Lá, ela reencontra personagens que estavam guardados em sua memória através dos sonhos.</p>
+              </div>
+              <div class="botao container d-flex justify-content-center mt-5">
+                <a href="./sub/coringa.html" class="btn btn-success border-0 rounded-5 p-2 lh-lg" style="width: 90%;" >Abrir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card h-100 shadow mb-2">
+            <img src="./image/branquelas.jpeg" class="card-img-top" alt="Duas mulheres loiras, uma sorrindo e outra com cara de espanto" style="height: 180px;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-between bg-light">
+              <div class="texto">
+                <h5 class="card-title">As Branquelas</h5>
+                <p class="card-text">Dois irmãos agentes do FBI, Marcus e Kevin Copeland, acidentalmente evitam que bandidos sejam presos em uma apreensão de drogas. Como castigo, eles são forçados a escoltar um par de socialites nos Hamptons. Porém, quando as meninas descobrem o plano da agência, se recusam a ir. Sem opções, Marcus e Kevin decidem posar como as irmãs, transformando-se de homens afro-americanos em um par de loiras.</p>
+              </div>
+              <div class="botao container d-flex justify-content-center mt-5">
+                <a href="./sub/coringa.html" class="btn btn-success border-0 rounded-5 p-2 lh-lg" style="width: 90%;">Abrir</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col">
-          <img src="./image/coringa_card.jpeg" class="card-img-top" alt="...">
-          <div class="card bg-light shadow mb-3 rounded-top-5">
-            <div class="card-body">
-              <h3 class="card-title">Coringa</h3>
-              <p class="card-text fw-lighter">Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante.</p>
-              <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-success border-0 rounded-5" style="width: 90%;">Abrir</button>
+          <div class="card h-100 shadow pb-2">
+            <img src="./image/extraordinario.jpeg" class="card-img-top" alt="Uma família de mãos dadas, composta por uma mulher, uma criança e um homem" style="height: 180px;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-between bg-light">
+              <div class="texto">
+                <h5 class="card-title">Extraordinário</h5>
+                <p class="card-text">Auggie Pullman é um garoto que nasceu com uma deformidade facial e precisou passar por 27 cirurgias plásticas. Aos 10 anos, ele finalmente começa a frequentar uma escola regular, como qualquer outra criança, pela primeira vez. No quinto ano, ele precisa se esforçar para conseguir se encaixar em sua nova realidade.</p>
+              </div>
+              <div class="botao container d-flex justify-content-center mt-5">
+                <a href="./sub/coringa.html" class="btn btn-success border-0 rounded-5 p-2 lh-lg" style="width: 90%;">Abrir</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col">
-          <img src="./image/coringa_card.jpeg" class="card-img-top" alt="...">
-          <div class="card bg-light shadow mb-3 rounded-top-5">
-            <div class="card-body">
-              <h3 class="card-title">Coringa</h3>
-              <p class="card-text fw-lighter">Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante.</p>
-              <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-success border-0 rounded-5" style="width: 90%;">Abrir</button>
+          <div class="card h-100 shadow pb-2">
+            <img src="./image/penetras.jpeg" class="card-img-top" alt="Dois homens abraçados lateralmente olhando para frente e sorrindo" style="height: 180px;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-between bg-light">
+              <div class="texto">
+                <h5 class="card-title">Penetras bom de bico</h5>
+                <p class="card-text">Jeremy e John gastam seu tempo livre como penetras em recepções de casamento. Para a dupla irreprimível, não há nada melhor do que beber e comer de graça e seduzir mulheres vulneráveis. Quando o secretário do Tesouro, William Cleary anuncia o casamento de sua filha, o par decide seguir sua missão e participar do evento de alto nível. Porém as coisas mudam de figura quando John encontra com a dama de honra Claire.</p>
+              </div>
+              <div class="botao container d-flex justify-content-center mt-5">
+                <a href="./sub/coringa.html" class="btn btn-success border-0 rounded-5 p-2 lh-lg" style="width: 90%;">Abrir</a>
+              </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow pb-2">
+            <img src="./image/vingadores.jpeg" class="card-img-top" alt="Persoangens do filme Vingadores" style="height: 180px;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-between bg-light">
+              <div class="texto">
+                <h5 class="card-title">Os vingadores</h5>
+                <p class="card-text">Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.</p>
+              </div>
+              <div class="botao container d-flex justify-content-center mt-5">
+                <a href="./sub/coringa.html" class="btn btn-success border-0 rounded-5 p-2 lh-lg" style="width: 90%;">Abrir</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <img src="./image/coringa_card.jpeg" class="card-img-top" alt="...">
-          <div class="card bg-light shadow mb-3 rounded-top-5">
-            <div class="card-body">
-              <h3 class="card-title">Coringa</h3>
-              <p class="card-text fw-lighter">Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante.</p>
-              <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-success border-0 rounded-5" style="width: 90%;">Abrir</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <img src="./image/coringa_card.jpeg" class="card-img-top" alt="...">
-          <div class="card bg-light shadow mb-3 rounded-top-5">
-            <div class="card-body">
-              <h3 class="card-title">Coringa</h3>
-              <p class="card-text fw-lighter">Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante.</p>
-              <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-success border-0 rounded-5" style="width: 90%;">Abrir</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <img src="./image/coringa_card.jpeg" class="card-img-top" alt="...">
-          <div class="card bg-light shadow mb-3 rounded-top-5">
-            <div class="card-body">
-              <h3 class="card-title">Coringa</h3>
-              <p class="card-text fw-lighter">Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante.</p>
-              <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-success border-0 rounded-5" style="width: 90%;">Abrir</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      
       </div>
     </section>
 
-    <footer class="d-flex justify-content-center">
-      <div class="bg-dark w-100">
-        <div class="d-flex flex-column justify-content-center align-items-center pt-5">
-          <h2 class="text-white mb-3">Felipe Stefani</h2>
-          <p class="text-white mb-3">Responsável pelo desenvolvimento do CP3</p>
+    <footer class="d-flex justify-content-center" id="footer">
+      <div class="bg-dark w-100 pt-4">
+        <div class="d-flex flex-column justify-content-center pt-5 ps-2" >
+          <h4 class="text-white mb-2 text-center" style="--bs-text-opacity: 0.8;">Felipe Stefani</h4>
+          <p class="text-secondary mb-3 mt-2 text-center" style="font-size: 14px;">Responsável pelo desenvolvimento do CP3</p>
           <div>
-            <ul class="list-group list-group-horizontal mb-5">
-              <li class="list-group-item m-2"><a href=""></a></li>
-              <li class="list-group-item m-2"><a href=""></a></li>
-              <li class="list-group-item m-2"><a href=""></a></li>
+            <ul class="d-flex justify-content-center align-items-center">
+              <li class="me-4 me-xs-1-"><a href="https://www.instagram.com/felipestefani/" target="_blank"><img src="./image/instagram.png" alt="Logo instagram" style="width: 40px; height: 40px;"></a></li>
+              <li class="me-4 me-xs-1"><a href="https://github.com/felipestefani" target="_blank"><img src="./image/github.png" alt="Logo github" style="width: 40px; height: 40px;"></a></li>
+              <li class="me-4 me-xs-1"><a href="https://www.linkedin.com/in/felipe-stefani-a35185116/" target="_blank"><img src="./image/linkedin.png" alt="Logo linkedin" style="width: 40px; height: 40px;"></a></li>
             </ul>
           </div>
+          <h6 class="text-secondary mt-3 mb-5 pb-3 text-center" style="font-size: 15px;">Checkpoint 3 desenvolvido em dezembro de 2021</h6>
         </div>
       </div>
     </footer>
+
+    <div class="modal fade" id="modalLogin" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="d-flex align-items-end justify-content-end">
+            <button type="button" class="btn-close mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class=" container modal-header d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./image/logo.png" style="width: 70%;justify-self: center;" alt="logo digital house">
+            </div>
+            
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="senha" class="col-form-label">senha</label>
+                <input type="senha" class="form-control" id="senha">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+            <button class="btn btn-primary" data-bs-target="#confirm" data-bs-toggle="modal">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="confirm" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="d-flex align-items-end justify-content-end">
+            <button type="button" class="btn-close mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class=" container modal-header d-flex justify-content-center">
+            <div>
+              <img class="" src="./image/logo.png" alt="logo digital house">
+            </div>
+          </div>
+          <div class="modal-body text-center">
+            Login realizado com sucesso (para fins didáticos)
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#modalLogin" data-bs-toggle="modal">Voltar a página anterior</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
